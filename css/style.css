@@ -1,0 +1,128 @@
+body{
+    width: 1280px;
+    margin: 0 auto;
+}
+header{
+    background-image: url(../img/header-bg.png);
+    display: flex;
+    justify-content:space-between;
+}
+.product{
+    padding: 50px 0 0 50px;
+}
+span{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+ul li{
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+ul li::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 7px;
+    left: -40px;
+    background-image: url(../img/check%20icon.png);
+}
+img{
+    width: 469px;
+    padding: 50px;
+}
+.description{
+    width: 1280px;
+    display: flex;
+}
+.heading_article{
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+article{
+    width: 649px;
+    background-color: #ffffff;
+    padding: 50px;
+}
+p{
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    word-break: keep-all;
+}
+video{
+    width: 430px;
+    padding: 50px;
+}
+.pros{
+    background-color: #f5f5f5;
+    width: 1280px;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pros-title{
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+}
+.pros-article{
+    box-sizing: border-box;
+    width: 50%;    
+    padding: 0 0 0 50px;
+}
+.pluses{
+    margin: 30px 50px 0 50px;
+}
+.pluses-title{
+    position: relative;
+    outline: none;
+    padding-bottom: 10px;
+}
+.pluses-title::-webkit-details-marker {
+    display: none;
+}
+.pluses-title::before{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #445161; 
+    content: "+"; 
+    color: #fff; 
+    position: absolute;
+    top: -5px;
+    left:-40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+details[open] summary:before {
+    content: "-";
+    font-size: 1.5em;
+}
+.pluses-txt{
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    word-break: keep-all;
+}
